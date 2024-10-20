@@ -1,0 +1,252 @@
+
+    
+    
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="blog, kardelen, düzce üniversitesi, website ödevi">
+    <title>Kardelenin Blogu</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+
+
+
+
+
+
+<style>
+
+
+
+
+body{
+    background-color: rgb(153, 240, 211);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+}
+#anaresim {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+
+
+ul{
+    
+    background-color:#00472b ;
+    list-style-type: none;
+
+}
+ul li {
+
+    display: inline-block;
+padding:15px;
+margin-right:15px;
+margin-left:-30x ;
+}
+ul li i {
+text-decoration:none;
+color: azure;
+font-size: medium;
+
+}
+ul li a:hover{
+    color: aqua;
+    transition:0.5;
+}
+
+.tablo{
+    display: inline-block;
+ position: absolute;
+   border:3px outset white;
+   border-radius: 20%;
+ 
+    margin-left:500px ;
+    margin-top: 30px;
+    background-color: #156d4b;
+    width: 1000px;
+   height: 1000px;
+}
+
+.white{
+    color: aliceblue;
+}
+
+#basil{
+    text-align: center;
+    color: aliceblue;
+}
+.border{
+   
+    width: 500px;
+    height: 50px;
+    border: 2px outset whitesmoke;
+    border-radius: 5%
+    padding:15px;
+    font-size:x-large;
+    text-align: center;
+    margin: 20px;
+    margin-left: 250px;
+}
+
+#metin{
+    width: 600px;
+    height: 300px;
+    border: 2px outset whitesmoke;
+    border-radius: 5%
+    padding:15px;
+    font-size:x-large;
+    
+    margin: 20px;
+    margin-left: 200px;
+}
+
+#butons{
+    width: 100px;
+    height: 50px;
+    border: 2px outset whitesmoke;
+    border-radius: 5%
+    padding:15px;
+    font-size:x-large;
+    margin-left: 200px;
+    margin-top:5px;
+}
+#buton{
+    width: 100px;
+    height: 50px;
+    border: 2px outset whitesmoke;
+    border-radius: 5%
+    padding:15px;
+    font-size:x-large;
+    margin-left: 2px;
+    margin-top:5px;
+}
+
+#uyarı{
+    text-align: center;
+    color: aliceblue;
+    margin-top: 60px;
+}
+
+#ilbuton{
+    color: none;
+    background: none;
+    border: none;
+}
+
+
+</style>
+</head>
+
+<body>
+    <img id="anaresim" src="kardelen cicegi resmi" alt="kardelen çiçeği resmi bulunamadı" width="100%" height="300px">
+
+
+    <ul>
+  
+    <li><a href="http://127.0.0.1:5500/anaden.html"><i class="fa-solid fa-house">ANASAYFA</i></a></li>
+    
+    
+    
+    <li><button id="ilbuton" type="menu" class="btn" onclick="openPopup()"><i class="fa-regular fa-address-card"><span>İLETİŞİM</span></i></button> </li>
+    
+    
+    
+    <div class="popup" id="popup"><h2>
+        Zaten bu sayfadasın:)
+      </h2>
+    
+    <button type="button" onclick="closePopup()">KAPAT</button>
+    
+    </div>
+    
+        
+        
+       
+          <script>
+            let popup = document.getElementById("popup");
+            function openPopup(){
+                popup.classList.add("open-popup");
+            }
+            
+            function closePopup(){
+                popup.classList.remove("open-popup");
+            }
+            
+
+            
+                </script>
+                
+        
+
+
+    <li><a href="http://127.0.0.1:5500/prjelerim.html"><i class="fa-solid fa-diagram-project">PROJELER</i></a></li>
+    <li><a href="http://127.0.0.1:5500/anket.html"><i class="fa-solid fa-square-poll-vertical">ANKET</i></a></li>
+</ul>
+<div class="tablo">
+<form action="https://formspree.io/f/xvgoojqj" name="post"  method="post">
+    <table>
+        <tr>
+            <h1 id="basil" >İLETİŞİM FORMU</h1>
+        </tr>
+        <tr>
+            <td ><input class="border" type="text" placeholder="Adınız"></td>
+        </tr>
+    <tr>
+        
+        <td  >
+            <input class="border" name="mail" id="mail" type="email" placeholder="E-Mailiniz" required>
+        </td>
+    </tr>
+    <tr>
+        <td   >
+          <input class="border"  type="text" placeholder="Konu">
+        </td>
+    </tr>
+    <tr>
+        <td  >
+            <textarea    required cols="64" rows="13" name="mesaj" id="metin" placeholder="Mesajınızı Giriniz"></textarea>
+        </td>
+    </tr>
+  
+    <tr>
+    
+        <td>
+            <input id="butons" type="submit" value="Gönder">
+            <input id="buton" type="reset" value="Temizle">
+        </td>
+    </tr>
+     </table>
+     
+    </form>
+    
+    <h2 id="uyarı">!lütfen mesajınızda kendinizi tanıtınız!</h2>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
